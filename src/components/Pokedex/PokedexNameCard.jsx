@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import './styles/PokedexNameCard.css'
+import './styles/pokedexNameCard.css'
 
 
 const PokedexNameCard = ({pokemon}) => {
