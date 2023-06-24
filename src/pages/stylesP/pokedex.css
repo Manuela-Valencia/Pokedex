@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap');
+
+:root {
+  --input-width: 200px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Pokedex_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box; /* Añadido para ajustar el box-sizing */
+}
+
+.Pokedex_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background-color: #f44336;
+  z-index: 1;
+}
+
+.Pokedex_header_black {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 17px;
+  background-color: #000000;
+  z-index: 1;
+}
+
+.Pokedex_content {
+  margin-top: 42px;
+  width: 100%; /* Añadido para ajustar el ancho */
+  box-sizing: border-box; /* Añadido para ajustar el box-sizing */
+}
+
+.Pokedex_saludo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.pokedex_nametrainer {
+  color: #f44336;
+}
+
+.pokedex_formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%; /* Añadido para ajustar el ancho */
+  box-sizing: border-box; /* Añadido para ajustar el box-sizing */
+}
+
+.pokedex_formulario input[type="text"],
+.pokedex_formulario button,
+.pokedex_formulario select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: var(--input-width); /* Ajustar el ancho deseado */
+  box-sizing: border-box; /* Añadido para ajustar el box-sizing */
+}
+
+.pokedex_btn {
+  background-color: #f44336;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pokedex_desplegable {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --input-width: 100%;
+  }
+
+  .pokedex_formulario {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pokedex_formulario input[type="text"],
+  .pokedex_formulario button,
+  .pokedex_formulario select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

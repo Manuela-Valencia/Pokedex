@@ -1,0 +1,27 @@
+/* RESET */
+
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@400;500&display=swap";
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
