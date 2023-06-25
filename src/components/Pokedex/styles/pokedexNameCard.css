@@ -42,7 +42,7 @@
 }
 
 .pokeCard__img {
-    width: 300px;
+    width: 250px;
 }
 
 .pokeCard__body {
@@ -88,7 +88,7 @@
 
 
 .pokeCard__stats {
-    margin: 1.5em 0 3em;
+    margin: 1em 0 2em;
 }
 
 .pokeCard__stats-tittle {
@@ -133,13 +133,13 @@
 
 .pokeCard__stats-item--level {
     font-size: 0.9rem;
-    width: 40px;
+    width: 30px;
 }
 
 .pokeCard__stats-item--relleno {
     position: relative;
     background-color: #e4dddd;
-    width: 100%;
+    width: 90%;
     border-radius: 1em;
     height: 0.9em;
 }
@@ -163,6 +163,7 @@
     display: flex;
     gap: 2em;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .pokeCard__abilitie {
@@ -171,12 +172,8 @@
     cursor: pointer;
     outline: 2px solid #333;
     transition: box-shadow 0.5s;
+    align-items: center;
 }
-
-.pokeCard__abilitie:hover {
-    box-shadow: rgba(114, 113, 113, 0.199) 0px 3px 12px;
-}
-
 
 /* Filter -- grass */
 .bgCard-grass {

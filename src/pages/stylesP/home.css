@@ -1,89 +1,93 @@
+/* Estilos para la imagen de fondo */
 .home_container {
-    background-image: url(/src/materialImg/fondoHome2.png);
+    background-image: url(/src/materialImg/newImgHome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 15rem;
-    width: auto;
-}
-
-.img {
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.home_title {
-    font-size: 70px;
-    color: #D93F3F;
-    border-color: black;
+  }
+  
+  /* Estilos para el contenedor principal */
+  .home_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilos para el subcontenedor */
+  .home_subcontainer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 28px;
     text-align: center;
-    font-weight: bold;
-}
-
-.home_saludo {
-    margin-top: 5%;
-    font-size: 2rem;
+    border-radius: 2rem;
+  }
+  
+  /* Estilos para el título */
+  .home_title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el saludo */
+  .home_saludo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el párrafo */
+  .home_parrafo {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el formulario */
+  .home_formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilos para el campo de entrada de texto */
+  .home_input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el botón */
+  .home_btn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal_content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
     text-align: center;
-    width: auto;
-}
-
-.home_parrafo {
-    margin-top: 3%;
-    text-align: center;
-    width: auto;
-    font-size: 1.1rem;
-    padding: 2rem;
-}
-
-.home_formulario {
-    margin-top: 0.5%;
-    text-align: center;
-    font-size: 3rem;
-}
-
-.home_btn {
-    background-color: #D93F3F;
-}
-
-/* Media Query para hacerlo responsive */
-@media (max-width: 768px) {
-    .home_container {
-        padding: 15rem 2rem; /* Ajustar el relleno en pantallas más pequeñas */
-        background-size: 100% 100%; /* Ajustar el tamaño de la imagen de fondo */
-    }
-
-    .home_title {
-        font-size: 40px;
-    }
-
-    .home_saludo {
-        font-size: 1.5rem;
-    }
-
-    .home_parrafo {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-
-    .home_formulario {
-        font-size: 2rem;
-    }
-    
-    /* Ajuste para evitar desbordamiento */
-    .home_container,
-    .home_parrafo,
-    .home_formulario {
-        max-width: 100%;
-        overflow: hidden;
-    }
-}
-
-/* Media Query para dejar la imagen estática */
-@media (max-width: 772px) and (max-height: 690px) {
-    .home_container {
-        background-attachment: initial;
-        background-size: auto;
-    }
-}
+  }
+  
+  .modal_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
